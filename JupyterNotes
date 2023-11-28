@@ -1,0 +1,28 @@
+
+M = float(input())
+N = 0
+def tong(N):
+  global tong
+  tong = (0.5**N - 1) / (0.5 -1)
+  return tong
+
+print(tong(11))
+
+m = int(input())
+snt = []
+
+for n in range(0, m):
+  def is_prime(n):
+      if n <= 1:
+          return False
+      for i in range(2, n):
+          if n % i == 0:
+              return False
+      return True
+  if is_prime(n):
+      snt.append(n)
+for i in range(len(snt)):
+  print(snt[i], end = " ")
+
+
+
